@@ -1,0 +1,8 @@
+HTTP/1.1 200 OK
+Date: Wed, 27 Oct 2010 23:30:31 GMT
+Server: Apache/2.2.3 (Debian) mod_ssl/2.2.3 OpenSSL/0.9.8c mod_apreq2-20051231/2.6.0 mod_perl/2.0.2 Perl/v5.8.8
+Content-Length: 1277
+Connection: close
+Content-Type: application/json
+
+{"spellResponse":{"term":[{"suggestion":{"$":"Ninja","@":"spell"},"weight":{"$":"0,99","@":"spell"},"@":"spell"},{"suggestion":{"$":"Ninga","@":"spell"},"weight":{"$":"0,8415","@":"spell"},"@":"spell"},{"suggestion":{"$":"Ninha","@":"spell"},"weight":{"$":"0,693","@":"spell"},"@":"spell"},{"suggestion":{"$":"Ninna","@":"spell"},"weight":{"$":"0,693","@":"spell"},"@":"spell"},{"suggestion":{"$":"Minja","@":"spell"},"weight":{"$":"0,693","@":"spell"},"@":"spell"},{"suggestion":{"$":"Ninka","@":"spell"},"weight":{"$":"0,6831","@":"spell"},"@":"spell"},{"suggestion":{"$":"Ninfa","@":"spell"},"weight":{"$":"0,6138","@":"spell"},"@":"spell"},{"suggestion":{"$":"Hinga","@":"spell"},"weight":{"$":"0,5890501","@":"spell"},"@":"spell"},{"suggestion":{"$":"Minga","@":"spell"},"weight":{"$":"0,5890501","@":"spell"},"@":"spell"},{"suggestion":{"$":"Nina","@":"spell"},"weight":{"$":"0,5742","@":"spell"},"@":"spell"}],"@":"spell"},"@namespaces":{"xml":"http:\/\/www.w3.org\/XML\/1998\/namespace","tns":"http:\/\/oss.dbc.dk\/ns\/openspell_wsdl","spell":"http:\/\/oss.dbc.dk\/ns\/openspell","wsdl":"http:\/\/schemas.xmlsoap.org\/wsdl\/","soap":"http:\/\/schemas.xmlsoap.org\/wsdl\/soap\/","dc":"http:\/\/purl.org\/dc\/elements\/1.1\/","xs":"http:\/\/www.w3.org\/2001\/XMLSchema"}}
