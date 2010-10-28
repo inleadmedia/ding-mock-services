@@ -49,7 +49,12 @@ while (true) {
   }
 
   if ($verbose) {
-    echo "< ", str_replace("\n", "\n< ", trim($response)) . "\n";
+    if (strlen(trim($response)) > 1024) {
+      $tmp = substr(trim($response), 0, 1024) . " (...)";
+    } else {
+      $tmp = trim($response);
+    }
+    echo "< ", str_replace("\n", "\n< ", $tmp) . "\n";
   }
 
   socket_write($client, $response);
