@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+Date: Thu, 28 Oct 2010 15:43:03 GMT
+Server: gSOAP/2.7
+Content-Type: text/xml
+Content-Length: 1826
+Connection: close
+
+<?xml version="1.0" encoding="UTF-8"?>
+<AlmaMessage xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:alma="http://www.axiell.com/Schema/alma/v1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><getCatalogueRecordDetailResponse><status key="moduleNotAvailable" value="ok"></status><detailCatalogueRecord reservable="23685531" showReservationButton="yes" nofReservations="0" nofLoansYear="-1" nofLoansTotal="-1" nofAvailableForLoan="1" shelfMark=" > Nors" resourceType="physical" publicationYear="2001" openUrl="&amp;aulast=Nors&amp;aufirst=Dorthe&amp;isbn=87-568-1644-8&amp;title=Soul&amp;date=2001" mediaClassIcon="book" mediaClass="book" id="23685531" extent="311 sider" category="fictionCategory"><authors><author value="Dorthe Nors"></author></authors><descriptions><description value="Et umage par som m&#248;des i det &#229;rhusianske cafemilj&#248;, tiltr&#230;kkes alligevel af hinanden. Gennem deres samliv afd&#230;kkes de traumer der ligger gemt i fortiden, som de sammen bearbejder"></description></descriptions><isbns><isbn value="ISBN 87-568-1644-8"></isbn></isbns><languages><language value="dan"></language></languages><notes><note value="Originaludgave: 2001"></note></notes><titles><title value="Soul : roman"></title></titles><holdings><holding status="availableForLoan" nofOrdered="0" nofCheckedOut="0" nofReference="0" nofTotal="1" collectionId="10" subLocationId="" locationId="sommag" departmentId="vok" branchId="B" organisationId="DK-715700" showReservationButton="no" nofAvailableForLoan="1" shelfMark=" > Nors"></holding></holdings></detailCatalogueRecord></getCatalogueRecordDetailResponse></AlmaMessage>

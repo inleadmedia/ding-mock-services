@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+Date: Thu, 28 Oct 2010 15:42:55 GMT
+Server: gSOAP/2.7
+Content-Type: text/xml
+Content-Length: 1481
+Connection: close
+
+<?xml version="1.0" encoding="UTF-8"?>
+<AlmaMessage xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:alma="http://www.axiell.com/Schema/alma/v1.0"><getAvailabilityResponse><status key="moduleNotAvailable" value="ok"></status><catalogueRecords><catalogueRecord isAvailable="yes" id="23685531"></catalogueRecord><catalogueRecord isAvailable="yes" id="24908941"></catalogueRecord><catalogueRecord isAvailable="yes" id="25923162"></catalogueRecord><catalogueRecord isAvailable="yes" id="27413072"></catalogueRecord><catalogueRecord isAvailable="yes" id="33379986"></catalogueRecord><catalogueRecord isAvailable="yes" id="28237618"></catalogueRecord><catalogueRecord isAvailable="yes" id="44609932"></catalogueRecord><catalogueRecord isAvailable="yes" id="28116829"></catalogueRecord><catalogueRecord isAvailable="yes" id="27592678"></catalogueRecord><catalogueRecord isAvailable="yes" id="28254563"></catalogueRecord><catalogueRecord isAvailable="yes" id="28254563"></catalogueRecord><catalogueRecord isAvailable="yes" id="27680801"></catalogueRecord><catalogueRecord isAvailable="yes" id="27753310"></catalogueRecord><catalogueRecord isAvailable="yes" id="20426551"></catalogueRecord><catalogueRecord isAvailable="yes" id="05603714"></catalogueRecord></catalogueRecords></getAvailabilityResponse></AlmaMessage>
