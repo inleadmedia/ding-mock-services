@@ -1,0 +1,258 @@
+HTTP/1.1 200 OK
+Date: Thu, 28 Oct 2010 12:38:45 GMT
+Server: Apache/2.2.3 (Debian) mod_ssl/2.2.3 OpenSSL/0.9.8c mod_apreq2-20051231/2.6.0 mod_perl/2.0.2 Perl/v5.8.8
+Last-Modified: Mon, 30 Nov 2009 10:01:18 GMT
+ETag: "400574d-3157-47993b9035780"
+Accept-Ranges: bytes
+Content-Length: 12631
+Content-Type: text/plain; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:addi="http://www.dbc.dk/addi/20070813/" targetNamespace="http://www.dbc.dk/addi/20070813/">
+	<wsdl:documentation>Version 0.9</wsdl:documentation>
+	<wsdl:types>
+		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:addi="http://www.dbc.dk/addi/20070813/" targetNamespace="http://www.dbc.dk/addi/20070813/" xmlns:bowk="http://www.dbc.dk/bowk/20081006" elementFormDefault="qualified" attributeFormDefault="unqualified">
+		<xs:import namespace="http://www.dbc.dk/bowk/20081006" schemaLocation="bowk.xsd"/>
+			<xs:element name="additionalInformationRequest">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element ref="addi:authentication"/>
+						<xs:element ref="addi:identifier" maxOccurs="100"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="additionalInformationResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="requestStatus" type="addi:StatusType"/>
+						<xs:element name="identifierInformation" type="addi:IdentifierInformationType" minOccurs="0" maxOccurs="100"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:complexType name="IdentifierInformationType">
+				<xs:sequence>
+					<xs:element name="identifierKnown" type="xs:boolean"/>
+					<!-- true if item found in database. Does not guarantee any data below -->
+					<xs:element ref="addi:identifier"/>
+					<xs:element name="ajourDate" type="xs:date" minOccurs="0"/>
+					<xs:element xmlns:bowk="http://www.dbc.dk/bowk/20081006" name="coverArtist" type="addi:FullName" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="image" type="addi:ImageType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="abstract" type="addi:TextType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="coverText" type="addi:TextType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="tableOfContents" type="addi:TextType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="excerpt" type="addi:ExcerptType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:authorAffiliation" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:bihAuthorBiography" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:bowkersGuideToAmLit" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:authorComments" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:authoredTitle" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:backCoverCopy" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:bdsSummary" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:boldListing" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:bookNews" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:bisac" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:contentDescription" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:comments" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:consumerDescription" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:canadianLibrarySummary" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:descriptionForBookstore" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:descriptionForReadingGroupGuide" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:descriptionForLibrary" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:descriptionForPressOrOtherMedia" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:discussionQuestionForReadingGroupGuide" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:descriptionForReader" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:descriptionForSalesPeople" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:descriptionForTeachersEducators" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:descriptionForSubsidiaryRights" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:editorialDescription" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:excerptFromBook" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:firstChapter" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:fictionFavorite" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:flapCopy" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:firstPages" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:fullText" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:introductionOrPreface" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:ingram" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:individualTracks" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:kidsCorner" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:marcLibraryOfCongressSubjectTraces" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:longDescription" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:libraryOfCongressSummary" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:mainDescription" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:paidAdvertisement" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:promotionalHeadline" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:previousReviewQuote" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:puvill" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:publisherFactSheet" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:reviewQuote" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:reviewText" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:review" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:shortAnnotation" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:shortDescription" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:softwareEncyclopedia" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:thorpeShortAnnotation" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:tableOfContents" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:titleSummary" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:unPaidAnnotation" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="bowk:unpublishedEndorsement" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="StatusType">
+				<xs:sequence>
+					<xs:element name="statusEnum">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="ok"/>
+								<xs:enumeration value="service_unavailable"/>
+								<xs:enumeration value="error_in_request"/>
+								<xs:enumeration value="authentication_error"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="errorText" type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="authentication" type="addi:AuthenticationType"/>
+			<xs:complexType name="AuthenticationType">
+				<xs:sequence>
+					<xs:element name="authenticationUser" type="addi:AuthenticationUserType"/>
+					<xs:element name="authenticationGroup" type="addi:AuthenticationGroupType"/>
+					<xs:element name="authenticationPassword" type="addi:AuthenticationPasswordType"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="identifier" type="addi:IdentifierType"/>
+			<xs:complexType name="IdentifierType">
+				<xs:choice>
+					<xs:element name="faust" type="addi:FaustType"/>
+					<xs:element name="isbn" type="addi:IsbnType"/>
+					<xs:sequence>
+						<xs:element name="localIdentifier" type="addi:LocalIdentifierType"/>
+						<xs:element name="libraryCode" type="addi:LibraryCodeType"/>
+					</xs:sequence>
+				</xs:choice>
+			</xs:complexType>
+			<xs:simpleType name="AuthenticationUserType">
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="100"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="AuthenticationGroupType">
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="100"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="AuthenticationPasswordType">
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="100"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="LocalIdentifierType">
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="30"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="FaustType">
+				<xs:restriction base="xs:string">
+					<xs:pattern value="\d ?\d{3} ?\d{3} ?\d"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="IsbnType">
+				<xs:restriction base="xs:string">
+					<xs:pattern value="[0-9]{9}[0-9xX]|97[89][0-9]{10}"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="LibraryCodeType">
+				<xs:restriction base="xs:string">
+					<xs:pattern value="DK-[6-8][0-9]{5}"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="FullName">
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="100"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="ImageType">
+				<xs:simpleContent>
+					<xs:extension base="xs:anyURI">
+						<xs:attribute name="imageSize">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="thumbnail"/>
+									<xs:enumeration value="detail"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="imageFormat">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="jpeg"/>
+									<xs:enumeration value="gif"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+					</xs:extension>
+				</xs:simpleContent>
+			</xs:complexType>
+			<xs:complexType name="TextType">
+				<xs:simpleContent>
+					<xs:extension base="xs:anyURI">
+						<xs:attribute ref="addi:textFormat"/>
+					</xs:extension>
+				</xs:simpleContent>
+			</xs:complexType>
+			<xs:complexType name="ExcerptType">
+				<xs:simpleContent>
+					<xs:extension base="xs:anyURI">
+						<xs:attribute ref="addi:textFormat"/>
+						<xs:attribute name="exerptFormat">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="chapter"/>
+									<xs:enumeration value="paragraph"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+					</xs:extension>
+				</xs:simpleContent>
+			</xs:complexType>
+			<xs:attribute name="textFormat">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="xml"/>
+						<xs:enumeration value="html"/>
+						<xs:enumeration value="pdf"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:schema>
+	</wsdl:types>
+	<wsdl:message name="additionalInformationRequest">
+		<wsdl:part name="body" element="addi:additionalInformationRequest"/>
+	</wsdl:message>
+	<wsdl:message name="additionalInformationResponse">
+		<wsdl:part name="body" element="addi:additionalInformationResponse"/>
+	</wsdl:message>
+	<wsdl:portType name="additionalInformationPortType">
+		<wsdl:operation name="additionalInformation">
+			<wsdl:input message="addi:additionalInformationRequest"/>
+			<wsdl:output message="addi:additionalInformationResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="additionalInformationBinding" type="addi:additionalInformationPortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="additionalInformation">
+			<soap:operation soapAction="http://addi.dk/additionalInformation"/>
+			<wsdl:input name="additionalInformationRequest">
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output name="additionalInformationResponse">
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="additionalInformationService">
+		<wsdl:port name="additionalInformationPortType" binding="addi:additionalInformationBinding">
+			<soap:address location="http://localhost:9000/soap"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

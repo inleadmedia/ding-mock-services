@@ -1,0 +1,83 @@
+HTTP/1.1 200 OK
+Date: Thu, 28 Oct 2010 13:01:36 GMT
+Server: Apache/2.2.3 (Debian) mod_ssl/2.2.3 OpenSSL/0.9.8c mod_apreq2-20051231/2.6.0 mod_perl/2.0.2 Perl/v5.8.8
+Last-Modified: Wed, 05 Aug 2009 13:04:44 GMT
+ETag: "400317d-100f-47064a596b300"
+Accept-Ranges: bytes
+Content-Length: 4111
+Content-Type: text/plain; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.dbc.dk/bowk/20081006" xmlns:bowk="http://www.dbc.dk/bowk/20081006" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="authorAffiliation" type="bowk:TextType"/>
+	<xs:element name="bihAuthorBiography" type="bowk:TextType"/>
+	<xs:element name="authorComments" type="bowk:TextType"/>
+	<xs:element name="bowkersGuideToAmLit" type="bowk:TextType"/>
+	<xs:element name="authoredTitle" type="bowk:TextType"/>
+	<xs:element name="backCoverCopy" type="bowk:TextType"/>
+	<xs:element name="bdsSummary" type="bowk:TextType"/>
+	<xs:element name="boldListing" type="bowk:TextType"/>
+	<xs:element name="bookNews" type="bowk:TextType"/>
+	<xs:element name="bisac" type="bowk:TextType"/>
+	<xs:element name="contentDescription" type="bowk:TextType"/>
+	<xs:element name="comments" type="bowk:TextType"/>
+	<xs:element name="consumerDescription" type="bowk:TextType"/>
+	<xs:element name="canadianLibrarySummary" type="bowk:TextType"/>
+	<xs:element name="descriptionForBookstore" type="bowk:TextType"/>
+	<xs:element name="descriptionForReadingGroupGuide" type="bowk:TextType"/>
+	<xs:element name="descriptionForLibrary" type="bowk:TextType"/>
+	<xs:element name="descriptionForPressOrOtherMedia" type="bowk:TextType"/>
+	<xs:element name="discussionQuestionForReadingGroupGuide" type="bowk:TextType"/>
+	<xs:element name="descriptionForReader" type="bowk:TextType"/>
+	<xs:element name="descriptionForSalesPeople" type="bowk:TextType"/>
+	<xs:element name="descriptionForTeachersEducators" type="bowk:TextType"/>
+	<xs:element name="descriptionForSubsidiaryRights" type="bowk:TextType"/>
+	<xs:element name="editorialDescription" type="bowk:TextType"/>
+	<xs:element name="excerptFromBook" type="bowk:TextType"/>
+	<xs:element name="firstChapter" type="bowk:TextType"/>
+	<xs:element name="flapCopy" type="bowk:TextType"/>
+	<xs:element name="fictionFavorite" type="bowk:TextType"/>
+	<xs:element name="firstPages" type="bowk:TextType"/>
+	<xs:element name="fullText" type="bowk:TextType"/>
+	<xs:element name="introductionOrPreface" type="bowk:TextType"/>
+	<xs:element name="ingram" type="bowk:TextType"/>
+	<xs:element name="individualTracks" type="bowk:TextType"/>
+	<xs:element name="kidsCorner" type="bowk:TextType"/>
+	<xs:element name="marcLibraryOfCongressSubjectTraces" type="bowk:TextType"/>
+	<xs:element name="longDescription" type="bowk:TextType"/>
+	<xs:element name="libraryOfCongressSummary" type="bowk:TextType"/>
+	<xs:element name="mainDescription" type="bowk:TextType"/>
+	<xs:element name="paidAdvertisement" type="bowk:TextType"/>
+	<xs:element name="promotionalHeadline" type="bowk:TextType"/>
+	<xs:element name="previousReviewQuote" type="bowk:TextType"/>
+	<xs:element name="puvill" type="bowk:TextType"/>
+	<xs:element name="publisherFactSheet" type="bowk:TextType"/>
+	<xs:element name="reviewQuote" type="bowk:TextType"/>
+	<xs:element name="reviewText" type="bowk:TextType"/>
+	<xs:element name="review" type="bowk:TextType"/>
+	<xs:element name="shortAnnotation" type="bowk:TextType"/>
+	<xs:element name="shortDescription" type="bowk:TextType"/>
+	<xs:element name="softwareEncyclopedia" type="bowk:TextType"/>
+	<xs:element name="thorpeShortAnnotation" type="bowk:TextType"/>
+	<xs:element name="tableOfContents" type="bowk:TextType"/>
+	<xs:element name="titleSummary" type="bowk:TextType"/>
+	<xs:element name="unPaidAnnotation" type="bowk:TextType"/>
+	<xs:element name="unpublishedEndorsement" type="bowk:TextType"/>
+	<xs:complexType name="TextType">
+		<xs:simpleContent>
+			<xs:extension base="xs:anyURI">
+				<xs:attribute ref="bowk:textFormat"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:attribute name="textFormat">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="txt"/>
+				<xs:enumeration value="xml"/>
+				<xs:enumeration value="html"/>
+				<xs:enumeration value="pdf"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+</xs:schema>

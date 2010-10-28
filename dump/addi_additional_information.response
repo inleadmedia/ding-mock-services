@@ -1,0 +1,29 @@
+HTTP/1.1 200 OK
+Date: Wed, 27 Oct 2010 23:30:40 GMT
+Server: Apache/2.2.3 (Debian) mod_ssl/2.2.3 OpenSSL/0.9.8c mod_apreq2-20051231/2.6.0 mod_perl/2.0.2 Perl/v5.8.8
+Keep-Alive: timeout=15, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/xml
+
+4c0
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<soapenv:Body><addi:additionalInformationResponse xsi:schemaLocation="http://www.dbc.dk/addi/20070813/test.xsd" xmlns:addi="http://www.dbc.dk/addi/20070813/" xmlns:bowk="http://www.dbc.dk/bowk/20081006" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <addi:requestStatus>
+    <addi:statusEnum>ok</addi:statusEnum>
+    <addi:errorText></addi:errorText>
+  </addi:requestStatus>
+  <addi:identifierInformation>
+    <addi:identifierKnown>true</addi:identifierKnown>
+    <addi:identifier>
+      <addi:faust>27409733</addi:faust>
+    </addi:identifier>
+    <addi:image imageSize="thumbnail" imageFormat="jpeg">http://forside.addi.dk/addi_get.php?id=44539387&amp;type=forside_lille&amp;key=ea06ac01401d15d5089f</addi:image>
+    <addi:image imageSize="detail" imageFormat="jpeg">http://forside.addi.dk/addi_get.php?id=44539387&amp;type=forside_stor&amp;key=38a577de6a71143f0365</addi:image>
+  </addi:identifierInformation>
+</addi:additionalInformationResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+0
+
