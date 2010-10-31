@@ -16,8 +16,8 @@ Content-Length: 1218
     <addi:identifier>
       <addi:faust>27409733</addi:faust>
     </addi:identifier>
-    <addi:image imageSize="thumbnail" imageFormat="jpeg">http://forside.addi.dk/addi_get.php?id=44539387&amp;type=forside_lille&amp;key=ea06ac01401d15d5089f</addi:image>
-    <addi:image imageSize="detail" imageFormat="jpeg">http://forside.addi.dk/addi_get.php?id=44539387&amp;type=forside_stor&amp;key=38a577de6a71143f0365</addi:image>
+    <addi:image imageSize="thumbnail" imageFormat="jpeg">http://localhost:9000/addi_get.php?id=44539387&amp;type=forside_lille&amp;key=ea06ac01401d15d5089f</addi:image>
+    <addi:image imageSize="detail" imageFormat="jpeg">http://localhost:9000/addi_get.php?id=44539387&amp;type=forside_stor&amp;key=38a577de6a71143f0365</addi:image>
   </addi:identifierInformation>
 </addi:additionalInformationResponse>
 </soapenv:Body>
