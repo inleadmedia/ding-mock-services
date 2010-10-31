@@ -1,0 +1,17 @@
+Configure Ding with the following settings:
+
+  Ting service settings:
+    Library Code: 123456
+    Search Service Url: http://localhost:9000/opensearch_gentofte/
+    Scan Service Url: http://localhost:9000/openscan_nextkilde/
+    Spell Service Url: http://localhost:9000/openspell_nextkilde/
+    Recommendation Service Url: http://localhost:9000/adhl/
+
+  Additional Information settings:
+    Service Url: http://localhost:9000/addi.wsdl
+    Username: test
+    Group: test
+    Password: test
+
+  Axiell Alma:
+    Alma Base Url: http://localhost:9000/alma/
