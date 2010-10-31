@@ -39,7 +39,13 @@ while (true) {
   foreach ($rules as $pattern => $handler) {
     if (preg_match($pattern, $request)) {
       echo "Matching rule found: $pattern\n";
-      $response = file_get_contents($handler);
+      if (preg_match('/\.php$/', $handler)) {
+        ob_start();
+        include($handler);
+        $response = ob_get_clean();
+      } else {
+        $response = file_get_contents($handler);
+      }
       break;
     }
   }
