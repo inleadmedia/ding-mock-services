@@ -15,3 +15,7 @@ Configure Ding with the following settings:
 
   Axiell Alma:
     Alma Base Url: http://localhost:9000/alma/
+
+Launch the server:
+  ./mock_server
+
