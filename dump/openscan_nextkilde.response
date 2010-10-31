@@ -1,9 +1,0 @@
-HTTP/1.1 200 OK
-Date: Wed, 27 Oct 2010 23:30:31 GMT
-Server: Apache/2.2.3 (Debian) mod_ssl/2.2.3 OpenSSL/0.9.8c mod_apreq2-20051231/2.6.0 mod_perl/2.0.2 Perl/v5.8.8
-Content-Length: 391
-Connection: close
-Content-Type: application/json
-
-{"scanResponse":{"timeUsed":{"$":"0","@":"scan"},"lastScanEntry":{"$":"ninja","@":"scan"}},"@namespaces":{"xml":"http:\/\/www.w3.org\/XML\/1998\/namespace","tns":"http:\/\/oss.dbc.dk\/ns\/openscan_wsdl","scan":"http:\/\/oss.dbc.dk\/ns\/openscan","wsdl":"http:\/\/schemas.xmlsoap.org\/wsdl\/","soap":"http:\/\/schemas.xmlsoap.org\/wsdl\/soap\/","xs":"http:\/\/www.w3.org\/2001\/XMLSchema"}}
-

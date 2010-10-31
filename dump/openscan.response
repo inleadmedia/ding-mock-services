@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+Date: Sun, 31 Oct 2010 21:14:31 GMT
+Server: Apache/2.2.3 (Debian) mod_ssl/2.2.3 OpenSSL/0.9.8c mod_apreq2-20051231/2.6.0 mod_perl/2.0.2 Perl/v5.8.8
+Content-Length: 1213
+Connection: close
+Content-Type: application/json
+
+{"scanResponse":{"term":[{"name":{"$":"nors petersen, j.","@":"scan"},"hitCount":{"$":"1","@":"scan"},"@":"scan"},{"name":{"$":"nors s. josephson","@":"scan"},"hitCount":{"$":"5","@":"scan"},"@":"scan"},{"name":{"$":"nors, dorthe","@":"scan"},"hitCount":{"$":"19","@":"scan"},"@":"scan"},{"name":{"$":"nors, p.","@":"scan"},"hitCount":{"$":"1","@":"scan"},"@":"scan"},{"name":{"$":"nors-skrifter","@":"scan"},"hitCount":{"$":"1","@":"scan"},"@":"scan"},{"name":{"$":"nors-skrifter 54","@":"scan"},"hitCount":{"$":"2","@":"scan"},"@":"scan"},{"name":{"$":"nors: north atlantic regional studies","@":"scan"},"hitCount":{"$":"3","@":"scan"},"@":"scan"},{"name":{"$":"norsa","@":"scan"},"hitCount":{"$":"6","@":"scan"},"@":"scan"},{"name":{"$":"norsalus","@":"scan"},"hitCount":{"$":"4","@":"scan"},"@":"scan"},{"name":{"$":"norsander, g\u00f6ran","@":"scan"},"hitCount":{"$":"1","@":"scan"},"@":"scan"}],"@":"scan"},"@namespaces":{"xml":"http:\/\/www.w3.org\/XML\/1998\/namespace","tns":"http:\/\/oss.dbc.dk\/ns\/openscan_wsdl","scan":"http:\/\/oss.dbc.dk\/ns\/openscan","wsdl":"http:\/\/schemas.xmlsoap.org\/wsdl\/","soap":"http:\/\/schemas.xmlsoap.org\/wsdl\/soap\/","xs":"http:\/\/www.w3.org\/2001\/XMLSchema"}}
+
