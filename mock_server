@@ -2,7 +2,18 @@
 <?php
 set_time_limit (0);
 
-echo "Loading configuration from mock.conf\n";
+$args = getopt("hp:vc:");
+$address = isset($args['h']) ? $args['h'] : 'localhost';
+$port = isset($args['p']) ? $args['p'] : '9000';
+$verbose = isset($args['v']);
+$config = isset($args['c']) ? $args['c'] : 'mock.conf';
+
+if (!is_readable($config)) {
+  echo "Unable to open $config for reading.\n";
+  exit -1;
+}
+
+echo "Loading configuration from $config\n";
 $rules = array();
 $buffer = null;
 foreach (explode("\n", file_get_contents("mock.conf")) as $line) {
@@ -15,10 +26,6 @@ foreach (explode("\n", file_get_contents("mock.conf")) as $line) {
     }
   }
 }
-
-$address = 'localhost';
-$port = 9000;
-$verbose = true;
 
 $sock = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
 socket_bind($sock, $address, $port) or die('Could not bind to address');
@@ -51,7 +58,13 @@ while (true) {
   }
 
   if (!$response) {
+    if (!$verbose) {
+      echo "> ", str_replace("\n", "\n> ", trim($request)) . "\n";
+    }
     $response = "HTTP/1.1 404 Not Found\n\n";
+    if (!$verbose) {
+      echo "< ", trim($response), "\n";
+    }
   }
 
   if ($verbose) {
@@ -60,7 +73,7 @@ while (true) {
     } else {
       $tmp = trim($response);
     }
-    echo "< ", str_replace("\n", "\n< ", $tmp) . "\n";
+    echo "< ", str_replace("\n", "\n< ", $tmp), "\n";
   }
 
   socket_write($client, $response);
