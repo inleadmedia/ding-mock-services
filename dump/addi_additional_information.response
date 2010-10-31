@@ -1,12 +1,9 @@
 HTTP/1.1 200 OK
 Date: Wed, 27 Oct 2010 23:30:40 GMT
 Server: Apache/2.2.3 (Debian) mod_ssl/2.2.3 OpenSSL/0.9.8c mod_apreq2-20051231/2.6.0 mod_perl/2.0.2 Perl/v5.8.8
-Keep-Alive: timeout=15, max=100
-Connection: Keep-Alive
-Transfer-Encoding: chunked
 Content-Type: text/xml
+Content-Length: 1218
 
-4c0
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <soapenv:Body><addi:additionalInformationResponse xsi:schemaLocation="http://www.dbc.dk/addi/20070813/test.xsd" xmlns:addi="http://www.dbc.dk/addi/20070813/" xmlns:bowk="http://www.dbc.dk/bowk/20081006" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -25,5 +22,4 @@ Content-Type: text/xml
 </addi:additionalInformationResponse>
 </soapenv:Body>
 </soapenv:Envelope>
-0
 
